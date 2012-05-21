@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DETFILE	Makefile	/^DETFILE = a$/;"	m
+FRUIT_H	fruit.h	2;"	d
+SFILE	Makefile	/^SFILE=  a.cpp fruit.cpp$/;"	m
+_H_	b.h	2;"	d
+c1	fruit.cpp	/^c1::c1(int i)$/;"	f	class:c1
+c1	fruit.cpp	/^c1::c1(void)$/;"	f	class:c1
+c1	fruit.h	/^class c1 {$/;"	c
+c2	fruit.cpp	/^c2::c2(int i, int m2):c1(12)	\/\/c2构造函数,调用c1(12)继承c1$/;"	f	class:c2
+c2	fruit.h	/^class c2:public c1		\/\/继承$/;"	c
+cc	Makefile	/^cc=g++$/;"	m
+debugflag	Makefile	/^debugflag= -g$/;"	m
+funp	a.cpp	/^void funp(c1 & o)$/;"	f
+i	fruit.h	/^	int i;$/;"	m	class:c1
+m2	fruit.h	/^	int m2;$/;"	m	class:c2
+main	a.cpp	/^int main()$/;"	f
+print	fruit.cpp	/^void c1::print(void)$/;"	f	class:c1
+print	fruit.cpp	/^void c2::print(void)$/;"	f	class:c2
+set	fruit.cpp	/^void c1::set(void)$/;"	f	class:c1
+wflag	Makefile	/^wflag= -Wall$/;"	m
+~c1	fruit.cpp	/^c1::~c1(void)$/;"	f	class:c1
+~c2	fruit.cpp	/^c2::~c2(void)$/;"	f	class:c2
