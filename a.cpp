@@ -1,4 +1,5 @@
 //构造函数 虚函数.
+//练习
 #include<iostream>
 #include"fruit.h"
 using namespace std;
