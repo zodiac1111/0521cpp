@@ -29,10 +29,14 @@ void c1::set(void)
 	cin >> i;
 	this->i = i;
 }
-
+c2::c2(void)
+{
+	cout<<"c2::init void"<<endl;
+	
+}
 c2::c2(int i, int m2):c1(12)	//c2构造函数,调用c1(12)继承c1
 {
-	cout << "c2::init" << endl;
+	cout << "c2::init value" << endl;
 	this->m2 = m2;
 }
 
@@ -45,3 +49,14 @@ c2::~c2(void)
 {
 	cout << "c2::end" << endl;
 }
+void c3::print(void)
+{
+	cout<<"c3::print"<<endl;
+	
+}
+c3::c3(void)
+{
+
+}
+c3::~c3(void)
+{}

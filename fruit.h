@@ -9,6 +9,7 @@ class c1 {
 	 c1(int i);
 	~c1(void);
 
+	//void print(void);	//虚函数
 	virtual void print(void);	//虚函数
 	void set(void);
 	int i;
@@ -22,7 +23,18 @@ class c2:public c1		//继承
 	//int i;
 	int m2;
 	virtual void print(void);	//虚函数
+	//void print(void);	//虚函数
 };
+class c3 :public c2
+{
+public:
+	c3 (void);
+	void print(void);
+	virtual ~c3 (void);
+private:
+	int m2;
+};
+
 /*
 void funp(c1 &o)
 {
