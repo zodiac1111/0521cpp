@@ -4,6 +4,7 @@
 *
 * Description	: 练习 
 */
+//使用gui增加
 //构造函数 虚函数.
 //练习 test
 #include<iostream>
