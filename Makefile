@@ -1,3 +1,4 @@
+#gui增加测试2 inMakeFile
 #makefile
 #编译器 /连接器等
 cc=g++
