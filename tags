@@ -12,16 +12,22 @@ c1	fruit.cpp	/^c1::c1(int i)$/;"	f	class:c1
 c1	fruit.cpp	/^c1::c1(void)$/;"	f	class:c1
 c1	fruit.h	/^class c1 {$/;"	c
 c2	fruit.cpp	/^c2::c2(int i, int m2):c1(12)	\/\/c2构造函数,调用c1(12)继承c1$/;"	f	class:c2
+c2	fruit.cpp	/^c2::c2(void)$/;"	f	class:c2
 c2	fruit.h	/^class c2:public c1		\/\/继承$/;"	c
+c3	fruit.cpp	/^c3::c3(void)$/;"	f	class:c3
+c3	fruit.h	/^class c3 :public c2$/;"	c
 cc	Makefile	/^cc=g++$/;"	m
 debugflag	Makefile	/^debugflag= -g$/;"	m
 funp	a.cpp	/^void funp(c1 & o)$/;"	f
 i	fruit.h	/^	int i;$/;"	m	class:c1
 m2	fruit.h	/^	int m2;$/;"	m	class:c2
+m2	fruit.h	/^	int m2;$/;"	m	class:c3
 main	a.cpp	/^int main()$/;"	f
 print	fruit.cpp	/^void c1::print(void)$/;"	f	class:c1
 print	fruit.cpp	/^void c2::print(void)$/;"	f	class:c2
+print	fruit.cpp	/^void c3::print(void)$/;"	f	class:c3
 set	fruit.cpp	/^void c1::set(void)$/;"	f	class:c1
 wflag	Makefile	/^wflag= -Wall$/;"	m
 ~c1	fruit.cpp	/^c1::~c1(void)$/;"	f	class:c1
 ~c2	fruit.cpp	/^c2::~c2(void)$/;"	f	class:c2
+~c3	fruit.cpp	/^c3::~c3(void)$/;"	f	class:c3
