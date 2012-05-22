@@ -52,7 +52,6 @@ c2::~c2(void)
 void c3::print(void)
 {
 	cout<<"c3::print"<<endl;
-	
 }
 c3::c3(void)
 {
